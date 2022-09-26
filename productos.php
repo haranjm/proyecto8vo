@@ -41,6 +41,8 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Codigo Fabricante</th>
+                        <th scope="col">Eliminar</th>
+                        <th scope="col">Editar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,6 +57,8 @@
                             <td><?php echo $fila["nombre"] ?></td>
                             <td><?php echo $fila["precio"] ?></td>
                             <td><?php echo $fila["codigo_fabricante"] ?></td>
+                            <td><a href="action/deleteproducto.php?id=<?php echo $fila["codigo"] ?>"class="btn btn-danger">Eliminar</a></td>
+                            <td><a href="action/editarproducto.php?id=<?php echo $fila["codigo"] ?>" class="btn btn-warning">Editar</a></td>
                         </tr>
                     <?php } ?>
                 </tbody>
